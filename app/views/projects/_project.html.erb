@@ -1,12 +1,6 @@
-<div class="container p-3 my-2 bg-dark text-white">
-<p>
-  <strong>Title:</strong>
-  <%= project.title %>
-</p>
 
-<p>
-  <strong>Description:</strong>
-  <%= project.description %>
-</p>
-
+<div class="col-sm-4 bg-info border border-dark">
+  <h3><%=  project.title %></h3>
+  <p><%= project.description %></p>
+  <p><%= link_to "Visit this project", project %></p>
 </div>

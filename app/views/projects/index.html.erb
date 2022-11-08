@@ -6,10 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link 
   href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" 
-rel="stylesheet">
+  rel="stylesheet">
   <script 
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.j
-s"></script>
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <style>
+  body {
+    font-family: Consolas, monaco, monospace;
+}
+  </style>
 </head>
 <body>
 
@@ -19,7 +24,7 @@ s"></script>
   </li>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="http://localhost:3000/projects/new">Create new project</a>
+    <a class="nav-link" href="http://localhost:3000/projects/new">Create New Project</a>
   </li>
 </ul>
 
@@ -27,13 +32,15 @@ s"></script>
   <h1>Arnold's Projects</h1>
 </div>
 
-<div id="projects">
+<div class="container mt-5">
+  <div class="row gap-3">
   <% @projects.each do |project| %>
     <%= render project %>
-    <p>
-      <%= link_to "Show this project", project %>
-    </p>
   <% end %>
+  <% if @projects.first.nil? %>
+    <p>You do not have any projects yet!</p>
+  <% end %>
+  </div>
 </div>
 
 </body>
