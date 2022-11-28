@@ -15,14 +15,18 @@
   <body>
     <ul class="nav nav-tabs">
       <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="http://localhost:3000/">Home</a>
+        <a class="nav-link active" aria-current="page" href="http://localhost:3000/projects">Home</a>
       </li>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="http://localhost:3000/projects/new">Create New Project</a>
       </li>
       <li class="nav-item ms-auto">
-        <a class="btn btn-outline-primary" href="">Sing In / Sing Up</a>
+        <% if user_signed_in? %>
+          <a class="btn btn-outline-primary" href="">Hello, <%= current_user.email %>. Sign out</a>
+        <% else %>
+          <a class="btn btn-outline-primary" href="http://localhost:3000">Sign in | Sing Up</a>
+        <% end %>
       </li>
     </ul>
     <div class="container-fluid p-3 bg-primary text-white text-left">
