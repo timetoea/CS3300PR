@@ -18,12 +18,14 @@
         <a class="nav-link active" aria-current="page" href="http://localhost:3000/projects">Home</a>
       </li>
       </li>
+      <% if user_signed_in? %>
       <li class="nav-item">
         <a class="nav-link" href="http://localhost:3000/projects/new">Create New Project</a>
       </li>
+      <% end %>
       <li class="nav-item ms-auto">
         <% if user_signed_in? %>
-          <a class="btn btn-outline-primary" href="">Hello, <%= current_user.email %>. Sign out</a>
+          <a class="btn btn-outline-primary" href="http://localhost:3000">Hello, <%= current_user.email %>. Sign out</a>
         <% else %>
           <a class="btn btn-outline-primary" href="http://localhost:3000">Sign in | Sing Up</a>
         <% end %>
