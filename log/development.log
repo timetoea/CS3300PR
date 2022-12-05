@@ -12860,3 +12860,2313 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 20ms (Views: 17.9ms | ActiveRecord: 1.3ms | Allocations: 2895)
 
 
+Started GET "/" for 172.17.0.1 at 2022-12-05 16:26:48 +0000
+Started GET "/" for 172.17.0.1 at 2022-12-05 16:26:48 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 11.0ms | Allocations: 1013)
+  Rendered home/index.html.erb within layouts/application (Duration: 10.5ms | Allocations: 1088)
+  Rendered layout layouts/application.html.erb (Duration: 98.4ms | Allocations: 40984)
+  Rendered layout layouts/application.html.erb (Duration: 98.5ms | Allocations: 41123)
+Completed 200 OK in 119ms (Views: 111.3ms | ActiveRecord: 0.0ms | Allocations: 47945)
+
+
+Completed 200 OK in 118ms (Views: 111.0ms | ActiveRecord: 0.0ms | Allocations: 47674)
+
+
+Started GET "/projects" for 172.17.0.1 at 2022-12-05 16:26:54 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:45
+  Rendered projects/_project.html.erb (Duration: 1.7ms | Allocations: 403)
+  Rendered projects/_project.html.erb (Duration: 0.2ms | Allocations: 49)
+  Rendered projects/_project.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.2ms | Allocations: 48)
+  Rendered projects/index.html.erb within layouts/application (Duration: 28.0ms | Allocations: 18116)
+  Rendered layout layouts/application.html.erb (Duration: 31.8ms | Allocations: 19795)
+Completed 200 OK in 37ms (Views: 31.1ms | ActiveRecord: 2.4ms | Allocations: 21579)
+
+
+Started GET "/" for 172.17.0.1 at 2022-12-05 16:27:09 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:3:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for 172.17.0.1 at 2022-12-05 16:27:27 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+AbstractController::ActionNotFound (The action 'projects' could not be found for HomeController):
+  
+actionpack (7.0.4) lib/abstract_controller/base.rb:146:in `process'
+actionview (7.0.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.4) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:852:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/cookies.rb:696:in `call'
+activerecord (7.0.4) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 172.17.0.1 at 2022-12-05 16:28:04 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for HomeController):
+  
+actionpack (7.0.4) lib/abstract_controller/base.rb:146:in `process'
+actionview (7.0.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.4) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:852:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/cookies.rb:696:in `call'
+activerecord (7.0.4) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 172.17.0.1 at 2022-12-05 16:28:05 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for HomeController):
+  
+actionpack (7.0.4) lib/abstract_controller/base.rb:146:in `process'
+actionview (7.0.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.4) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:852:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/cookies.rb:696:in `call'
+activerecord (7.0.4) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 172.17.0.1 at 2022-12-05 16:28:23 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+AbstractController::ActionNotFound (The action 'project' could not be found for HomeController):
+  
+actionpack (7.0.4) lib/abstract_controller/base.rb:146:in `process'
+actionview (7.0.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.4) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:852:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/cookies.rb:696:in `call'
+activerecord (7.0.4) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 172.17.0.1 at 2022-12-05 16:28:24 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+AbstractController::ActionNotFound (The action 'project' could not be found for HomeController):
+  
+actionpack (7.0.4) lib/abstract_controller/base.rb:146:in `process'
+actionview (7.0.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.4) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:852:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/cookies.rb:696:in `call'
+activerecord (7.0.4) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 172.17.0.1 at 2022-12-05 16:28:30 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 335)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 2050)
+Completed 200 OK in 6ms (Views: 6.0ms | Allocations: 2907)
+
+
+Started GET "/" for 172.17.0.1 at 2022-12-05 16:29:56 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 234)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 1727)
+Completed 200 OK in 10ms (Views: 9.1ms | Allocations: 2027)
+
+
+Started GET "/" for 172.17.0.1 at 2022-12-05 17:02:49 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:45
+  Rendered projects/_project.html.erb (Duration: 1.4ms | Allocations: 147)
+  Rendered projects/_project.html.erb (Duration: 0.2ms | Allocations: 49)
+  Rendered projects/_project.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.2ms | Allocations: 48)
+  Rendered projects/index.html.erb within layouts/application (Duration: 18.9ms | Allocations: 3635)
+  Rendered layout layouts/application.html.erb (Duration: 26.6ms | Allocations: 5312)
+Completed 200 OK in 32ms (Views: 29.5ms | ActiveRecord: 2.8ms | Allocations: 6829)
+
+
+Started GET "/projects/5" for 172.17.0.1 at 2022-12-05 17:03:22 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProject Load (1.8ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:63:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (Duration: 5.3ms | Allocations: 939)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 2498)
+Completed 200 OK in 39ms (Views: 10.7ms | ActiveRecord: 1.8ms | Allocations: 10677)
+
+
+Started GET "/" for 172.17.0.1 at 2022-12-05 17:03:27 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:45
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 65)
+  Rendered projects/_project.html.erb (Duration: 0.2ms | Allocations: 49)
+  Rendered projects/_project.html.erb (Duration: 0.2ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.4ms | Allocations: 48)
+  Rendered projects/index.html.erb within layouts/application (Duration: 8.6ms | Allocations: 1409)
+  Rendered layout layouts/application.html.erb (Duration: 17.5ms | Allocations: 2902)
+Completed 200 OK in 21ms (Views: 18.7ms | ActiveRecord: 0.2ms | Allocations: 3223)
+
+
+Started GET "/projects/5" for 172.17.0.1 at 2022-12-05 17:04:57 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProject Load (0.9ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:63:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (Duration: 2.0ms | Allocations: 449)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 1910)
+Completed 200 OK in 14ms (Views: 9.5ms | ActiveRecord: 0.9ms | Allocations: 2670)
+
+
+Started GET "/projects/5" for 172.17.0.1 at 2022-12-05 17:06:21 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProject Load (0.8ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:63:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1051)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 2906)
+Completed 200 OK in 19ms (Views: 15.2ms | ActiveRecord: 0.8ms | Allocations: 4518)
+
+
+Started GET "/projects/5" for 172.17.0.1 at 2022-12-05 17:06:22 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:63:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (Duration: 4.9ms | Allocations: 526)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 1987)
+Completed 200 OK in 15ms (Views: 11.1ms | ActiveRecord: 0.2ms | Allocations: 2816)
+
+
+Started GET "/projects/5" for 172.17.0.1 at 2022-12-05 17:06:23 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:63:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (Duration: 3.0ms | Allocations: 512)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 1984)
+Completed 200 OK in 19ms (Views: 11.7ms | ActiveRecord: 0.6ms | Allocations: 2739)
+
+
+Started GET "/projects/5" for 172.17.0.1 at 2022-12-05 17:06:23 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:63:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (Duration: 2.1ms | Allocations: 526)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 1987)
+Completed 200 OK in 13ms (Views: 9.9ms | ActiveRecord: 0.2ms | Allocations: 2739)
+
+
+Started GET "/" for 172.17.0.1 at 2022-12-05 17:06:26 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:45
+  Rendered projects/_project.html.erb (Duration: 1.3ms | Allocations: 212)
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 49)
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 48)
+  Rendered projects/index.html.erb within layouts/application (Duration: 15.5ms | Allocations: 1978)
+  Rendered layout layouts/application.html.erb (Duration: 20.0ms | Allocations: 3471)
+Completed 200 OK in 23ms (Views: 21.5ms | ActiveRecord: 0.3ms | Allocations: 3890)
+
+
+Started GET "/" for 172.17.0.1 at 2022-12-05 17:06:28 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:45
+  Rendered projects/_project.html.erb (Duration: 1.0ms | Allocations: 65)
+  Rendered projects/_project.html.erb (Duration: 1.1ms | Allocations: 49)
+  Rendered projects/_project.html.erb (Duration: 0.4ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.5ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.5ms | Allocations: 48)
+  Rendered projects/index.html.erb within layouts/application (Duration: 11.3ms | Allocations: 1387)
+  Rendered layout layouts/application.html.erb (Duration: 19.1ms | Allocations: 2889)
+Completed 200 OK in 21ms (Views: 20.4ms | ActiveRecord: 0.2ms | Allocations: 3209)
+
+
+Started GET "/" for 172.17.0.1 at 2022-12-05 17:06:31 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:45
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 65)
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 49)
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 48)
+  Rendered projects/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 1383)
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 2875)
+Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.2ms | Allocations: 3193)
+
+
+Started GET "/" for 172.17.0.1 at 2022-12-05 17:06:32 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:45
+  Rendered projects/_project.html.erb (Duration: 0.5ms | Allocations: 65)
+  Rendered projects/_project.html.erb (Duration: 0.4ms | Allocations: 49)
+  Rendered projects/_project.html.erb (Duration: 0.4ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 1.0ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.5ms | Allocations: 48)
+  Rendered projects/index.html.erb within layouts/application (Duration: 13.3ms | Allocations: 1385)
+  Rendered layout layouts/application.html.erb (Duration: 21.8ms | Allocations: 2877)
+Completed 200 OK in 24ms (Views: 22.8ms | ActiveRecord: 0.3ms | Allocations: 3195)
+
+
+Started GET "/" for 172.17.0.1 at 2022-12-05 17:07:17 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:45
+  Rendered projects/_project.html.erb (Duration: 0.9ms | Allocations: 275)
+  Rendered projects/_project.html.erb (Duration: 0.2ms | Allocations: 49)
+  Rendered projects/_project.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.2ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 48)
+  Rendered projects/index.html.erb within layouts/application (Duration: 7.7ms | Allocations: 2222)
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 4131)
+Completed 200 OK in 19ms (Views: 17.4ms | ActiveRecord: 0.1ms | Allocations: 5319)
+
+
+Started GET "/" for 172.17.0.1 at 2022-12-05 17:07:19 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:45
+  Rendered projects/_project.html.erb (Duration: 0.8ms | Allocations: 65)
+  Rendered projects/_project.html.erb (Duration: 0.6ms | Allocations: 49)
+  Rendered projects/_project.html.erb (Duration: 0.5ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.2ms | Allocations: 48)
+  Rendered projects/index.html.erb within layouts/application (Duration: 10.2ms | Allocations: 1391)
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 2883)
+Completed 200 OK in 16ms (Views: 15.3ms | ActiveRecord: 0.2ms | Allocations: 3222)
+
+
+Started GET "/home" for 172.17.0.1 at 2022-12-05 17:07:20 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/home"):
+  
+Started GET "/users/sign_in" for 172.17.0.1 at 2022-12-05 17:07:28 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 1.9ms | Allocations: 894)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 32.2ms | Allocations: 6653)
+  Rendered layout layouts/application.html.erb (Duration: 36.0ms | Allocations: 8308)
+Completed 200 OK in 83ms (Views: 38.2ms | ActiveRecord: 2.0ms | Allocations: 25676)
+
+
+Started GET "/users/sign_up" for 172.17.0.1 at 2022-12-05 17:07:36 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered users/shared/_error_messages.html.erb (Duration: 1.1ms | Allocations: 231)
+  Rendered users/shared/_links.html.erb (Duration: 1.5ms | Allocations: 367)
+  Rendered users/registrations/new.html.erb within layouts/application (Duration: 9.0ms | Allocations: 2599)
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 4249)
+Completed 200 OK in 20ms (Views: 17.2ms | ActiveRecord: 0.0ms | Allocations: 5747)
+
+
+Started GET "/" for 172.17.0.1 at 2022-12-05 17:08:58 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:45
+  Rendered projects/_project.html.erb (Duration: 1.0ms | Allocations: 275)
+  Rendered projects/_project.html.erb (Duration: 0.2ms | Allocations: 49)
+  Rendered projects/_project.html.erb (Duration: 0.2ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.4ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.5ms | Allocations: 48)
+  Rendered projects/index.html.erb within layouts/application (Duration: 9.6ms | Allocations: 2222)
+  Rendered layout layouts/application.html.erb (Duration: 15.8ms | Allocations: 4131)
+Completed 200 OK in 19ms (Views: 17.8ms | ActiveRecord: 0.2ms | Allocations: 5339)
+
+
+Started GET "/" for 172.17.0.1 at 2022-12-05 17:08:59 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:45
+  Rendered projects/_project.html.erb (Duration: 0.4ms | Allocations: 65)
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 49)
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.2ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 48)
+  Rendered projects/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 1391)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 2883)
+Completed 200 OK in 14ms (Views: 12.4ms | ActiveRecord: 0.2ms | Allocations: 3222)
+
+
+Started GET "/users/sign_up" for 172.17.0.1 at 2022-12-05 17:09:00 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered users/shared/_error_messages.html.erb (Duration: 0.6ms | Allocations: 225)
+  Rendered users/shared/_links.html.erb (Duration: 1.1ms | Allocations: 661)
+  Rendered users/registrations/new.html.erb within layouts/application (Duration: 6.6ms | Allocations: 2773)
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 4421)
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.0ms | Allocations: 5732)
+
+
+Started POST "/users/sign_in" for 172.17.0.1 at 2022-12-05 17:09:04 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 545)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 0.3ms | Allocations: 150)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1863)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 3493)
+Completed 200 OK in 9ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 4709)
+
+
+Started GET "/users/sign_up" for 172.17.0.1 at 2022-12-05 17:09:18 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered users/shared/_error_messages.html.erb (Duration: 1.2ms | Allocations: 225)
+  Rendered users/shared/_links.html.erb (Duration: 2.7ms | Allocations: 661)
+  Rendered users/registrations/new.html.erb within layouts/application (Duration: 10.4ms | Allocations: 2774)
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 4654)
+Completed 200 OK in 24ms (Views: 17.7ms | ActiveRecord: 0.0ms | Allocations: 6237)
+
+
+Started GET "/" for 172.17.0.1 at 2022-12-05 17:09:25 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:45
+  Rendered projects/_project.html.erb (Duration: 1.3ms | Allocations: 276)
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 49)
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.4ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 48)
+  Rendered projects/index.html.erb within layouts/application (Duration: 13.4ms | Allocations: 2226)
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | Allocations: 3903)
+Completed 200 OK in 21ms (Views: 19.8ms | ActiveRecord: 0.5ms | Allocations: 4908)
+
+
+Started GET "/users/sign_in" for 172.17.0.1 at 2022-12-05 17:09:27 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 0.3ms | Allocations: 150)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1874)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 3511)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms | Allocations: 4851)
+
+
+Started POST "/users/sign_in" for 172.17.0.1 at 2022-12-05 17:09:38 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"tarnoldf@uccs.edu", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "tarnoldf@uccs.edu"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 267ms (ActiveRecord: 1.4ms | Allocations: 10357)
+
+
+Started GET "/" for 172.17.0.1 at 2022-12-05 17:09:39 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:21
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:45
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 94)
+  Rendered projects/_project.html.erb (Duration: 0.1ms | Allocations: 49)
+  Rendered projects/_project.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered projects/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 2256)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 3859)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.2ms | Allocations: 4201)
+
+
+Started GET "/projects/5" for 172.17.0.1 at 2022-12-05 17:09:42 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:63:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/show.html.erb:27
+  Rendered projects/show.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1531)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 2992)
+Completed 200 OK in 8ms (Views: 6.1ms | ActiveRecord: 0.2ms | Allocations: 3847)
+
+
+Started GET "/projects/5" for 172.17.0.1 at 2022-12-05 17:11:00 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProject Load (0.8ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:63:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/show.html.erb:27
+  Rendered projects/show.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1869)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 3721)
+Completed 200 OK in 23ms (Views: 15.1ms | ActiveRecord: 0.9ms | Allocations: 5322)
+
+
+Started GET "/projects/5" for 172.17.0.1 at 2022-12-05 17:11:00 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:63:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/show.html.erb:27
+  Rendered projects/show.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1167)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 2628)
+Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 0.3ms | Allocations: 3411)
+
+
+Started GET "/projects/5" for 172.17.0.1 at 2022-12-05 17:11:29 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:63:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/show.html.erb:27
+  Rendered projects/show.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1950)
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 3802)
+Completed 200 OK in 29ms (Views: 25.2ms | ActiveRecord: 0.5ms | Allocations: 5403)
+
+
+Started GET "/projects/5" for 172.17.0.1 at 2022-12-05 17:11:30 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:63:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/show.html.erb:27
+  Rendered projects/show.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1173)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 2634)
+Completed 200 OK in 16ms (Views: 12.2ms | ActiveRecord: 0.5ms | Allocations: 3417)
+
+
+Started GET "/projects/5" for 172.17.0.1 at 2022-12-05 17:11:30 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:63:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/show.html.erb:27
+  Rendered projects/show.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1171)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 2632)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.3ms | Allocations: 3384)
+
+
+Started GET "/projects/5" for 172.17.0.1 at 2022-12-05 17:11:31 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:63:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/show.html.erb:27
+  Rendered projects/show.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1169)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 2630)
+Completed 200 OK in 14ms (Views: 10.5ms | ActiveRecord: 0.3ms | Allocations: 3382)
+
+
+Started GET "/projects/5" for 172.17.0.1 at 2022-12-05 17:11:44 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:63:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/show.html.erb:27
+  Rendered projects/show.html.erb within layouts/application (Duration: 6.0ms | Allocations: 1859)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 3711)
+Completed 200 OK in 20ms (Views: 17.4ms | ActiveRecord: 0.4ms | Allocations: 5312)
+
+
+Started GET "/projects/5" for 172.17.0.1 at 2022-12-05 17:11:45 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:63:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/show.html.erb:27
+  Rendered projects/show.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1943)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 3795)
+Completed 200 OK in 17ms (Views: 10.2ms | ActiveRecord: 0.4ms | Allocations: 5427)
+
+
+Started GET "/projects/5" for 172.17.0.1 at 2022-12-05 17:11:46 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProject Load (0.8ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:63:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/show.html.erb:27
+  Rendered projects/show.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1161)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 2622)
+Completed 200 OK in 15ms (Views: 9.3ms | ActiveRecord: 1.0ms | Allocations: 3405)
+
+
+Started GET "/" for 172.17.0.1 at 2022-12-05 17:11:49 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:21
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:45
+  Rendered projects/_project.html.erb (Duration: 1.0ms | Allocations: 212)
+  Rendered projects/_project.html.erb (Duration: 0.4ms | Allocations: 49)
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 1.6ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.4ms | Allocations: 48)
+  Rendered projects/index.html.erb within layouts/application (Duration: 11.4ms | Allocations: 2575)
+  Rendered layout layouts/application.html.erb (Duration: 14.5ms | Allocations: 4067)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.4ms | Allocations: 4485)
+
+
+Started GET "/users" for 172.17.0.1 at 2022-12-05 17:12:13 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/index" for 172.17.0.1 at 2022-12-05 17:12:37 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/index"):
+  
+Started GET "/users/sign_in" for 172.17.0.1 at 2022-12-05 17:13:58 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 8ms (ActiveRecord: 1.0ms | Allocations: 1414)
+
+
+Started GET "/" for 172.17.0.1 at 2022-12-05 17:13:58 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:21
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:45
+  Rendered projects/_project.html.erb (Duration: 0.4ms | Allocations: 65)
+  Rendered projects/_project.html.erb (Duration: 0.5ms | Allocations: 49)
+  Rendered projects/_project.html.erb (Duration: 1.3ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.4ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.2ms | Allocations: 48)
+  Rendered projects/index.html.erb within layouts/application (Duration: 10.4ms | Allocations: 2032)
+  Rendered layout layouts/application.html.erb (Duration: 32.3ms | Allocations: 3534)
+Completed 200 OK in 34ms (Views: 32.7ms | ActiveRecord: 0.3ms | Allocations: 3853)
+
+
+Started GET "/users/password/new" for 172.17.0.1 at 2022-12-05 17:14:08 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::PasswordsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 7ms (ActiveRecord: 0.5ms | Allocations: 1717)
+
+
+Started GET "/" for 172.17.0.1 at 2022-12-05 17:14:08 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:21
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:45
+  Rendered projects/_project.html.erb (Duration: 0.4ms | Allocations: 94)
+  Rendered projects/_project.html.erb (Duration: 0.2ms | Allocations: 49)
+  Rendered projects/_project.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.2ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.5ms | Allocations: 48)
+  Rendered projects/index.html.erb within layouts/application (Duration: 8.9ms | Allocations: 2065)
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 3671)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.3ms | Allocations: 4036)
+
+
+Started GET "/index" for 172.17.0.1 at 2022-12-05 17:15:24 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/index"):
+  
+Started GET "/index" for 172.17.0.1 at 2022-12-05 17:15:25 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/index"):
+  
+Started GET "/" for 172.17.0.1 at 2022-12-05 17:15:29 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:22
+  Rendered home/index.html.erb within layouts/application (Duration: 14.1ms | Allocations: 4772)
+  Rendered layout layouts/application.html.erb (Duration: 17.3ms | Allocations: 6422)
+Completed 200 OK in 19ms (Views: 18.9ms | ActiveRecord: 1.0ms | Allocations: 7410)
+
+
+Started GET "/projects" for 172.17.0.1 at 2022-12-05 17:16:11 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:21
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:45
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 143)
+  Rendered projects/_project.html.erb (Duration: 0.1ms | Allocations: 49)
+  Rendered projects/_project.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered projects/index.html.erb within layouts/application (Duration: 13.0ms | Allocations: 4015)
+  Rendered layout layouts/application.html.erb (Duration: 16.3ms | Allocations: 5693)
+Completed 200 OK in 19ms (Views: 16.2ms | ActiveRecord: 1.5ms | Allocations: 7204)
+
+
+Started GET "/projects" for 172.17.0.1 at 2022-12-05 17:16:30 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:21
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:45
+  Rendered projects/_project.html.erb (Duration: 0.9ms | Allocations: 214)
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 49)
+  Rendered projects/_project.html.erb (Duration: 0.2ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.2ms | Allocations: 48)
+  Rendered projects/index.html.erb within layouts/application (Duration: 13.4ms | Allocations: 3169)
+  Rendered layout layouts/application.html.erb (Duration: 20.7ms | Allocations: 5050)
+Completed 200 OK in 25ms (Views: 23.5ms | ActiveRecord: 0.5ms | Allocations: 6272)
+
+
+Started GET "/projects" for 172.17.0.1 at 2022-12-05 17:16:31 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:21
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:45
+  Rendered projects/_project.html.erb (Duration: 1.2ms | Allocations: 50)
+  Rendered projects/_project.html.erb (Duration: 0.4ms | Allocations: 49)
+  Rendered projects/_project.html.erb (Duration: 0.2ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.2ms | Allocations: 48)
+  Rendered projects/index.html.erb within layouts/application (Duration: 10.7ms | Allocations: 2232)
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | Allocations: 3711)
+Completed 200 OK in 15ms (Views: 14.6ms | ActiveRecord: 0.3ms | Allocations: 4047)
+
+
+Started GET "/projects" for 172.17.0.1 at 2022-12-05 17:16:31 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:21
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:45
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 50)
+  Rendered projects/_project.html.erb (Duration: 0.2ms | Allocations: 49)
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 48)
+  Rendered projects/index.html.erb within layouts/application (Duration: 14.4ms | Allocations: 2240)
+  Rendered layout layouts/application.html.erb (Duration: 20.1ms | Allocations: 3719)
+Completed 200 OK in 24ms (Views: 20.8ms | ActiveRecord: 1.6ms | Allocations: 4037)
+
+
+Started GET "/projects" for 172.17.0.1 at 2022-12-05 17:16:32 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:21
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:45
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 50)
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 49)
+  Rendered projects/_project.html.erb (Duration: 0.2ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.2ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.2ms | Allocations: 48)
+  Rendered projects/index.html.erb within layouts/application (Duration: 11.0ms | Allocations: 2234)
+  Rendered layout layouts/application.html.erb (Duration: 17.7ms | Allocations: 3713)
+Completed 200 OK in 20ms (Views: 19.1ms | ActiveRecord: 0.5ms | Allocations: 4031)
+
+
+Started GET "/projects" for 172.17.0.1 at 2022-12-05 17:16:32 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:21
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:45
+  Rendered projects/_project.html.erb (Duration: 0.5ms | Allocations: 50)
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 49)
+  Rendered projects/_project.html.erb (Duration: 0.4ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 48)
+  Rendered projects/index.html.erb within layouts/application (Duration: 14.0ms | Allocations: 2234)
+  Rendered layout layouts/application.html.erb (Duration: 18.6ms | Allocations: 3713)
+Completed 200 OK in 21ms (Views: 19.6ms | ActiveRecord: 0.5ms | Allocations: 4031)
+
+
+Started GET "/projects" for 172.17.0.1 at 2022-12-05 17:16:32 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:21
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:45
+  Rendered projects/_project.html.erb (Duration: 0.2ms | Allocations: 50)
+  Rendered projects/_project.html.erb (Duration: 0.2ms | Allocations: 49)
+  Rendered projects/_project.html.erb (Duration: 0.2ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 48)
+  Rendered projects/index.html.erb within layouts/application (Duration: 12.6ms | Allocations: 2234)
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 3713)
+Completed 200 OK in 19ms (Views: 17.2ms | ActiveRecord: 0.6ms | Allocations: 4031)
+
+
+Started GET "/projects" for 172.17.0.1 at 2022-12-05 17:16:43 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:21
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:45
+  Rendered projects/_project.html.erb (Duration: 0.2ms | Allocations: 50)
+  Rendered projects/_project.html.erb (Duration: 0.2ms | Allocations: 49)
+  Rendered projects/_project.html.erb (Duration: 0.2ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.2ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.2ms | Allocations: 48)
+  Rendered projects/index.html.erb within layouts/application (Duration: 14.0ms | Allocations: 2238)
+  Rendered layout layouts/application.html.erb (Duration: 18.6ms | Allocations: 3717)
+Completed 200 OK in 20ms (Views: 19.1ms | ActiveRecord: 0.4ms | Allocations: 4035)
+
+
+Started GET "/projects" for 172.17.0.1 at 2022-12-05 17:16:43 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  Rendered projects/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1333)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 1414)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 2589)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap 5 Website Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      body {
+        font-family: Consolas, monaco, monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="http://localhost:3000/projects">Home</a>
+      </li>
+      </li>
+      <% if user_signed_in? %>
+      <li class="nav-item">
+        <a class="nav-link" href="http://localhost:3000/projects/new">Create New Project</a>
+      </li>
+      <% end %>
+      <li class="nav-item ms-auto">
+        <% if user_signed_in? %>
+          <a class="btn btn-outline-primary" href=" <%=destroy_user_session_path, method: :delete %> ">Hello, <%= current_user.email %>. Sign out</a>
+        <% else %>
+          <a class="btn btn-outline-primary" href="http://localhost:3000/users/sign_in">Sign in | Sing Up</a>
+        <% end %>
+      </li>
+    </ul>
+    <div class="container-fluid p-3 bg-primary text-white text-left">
+      <h1>Arnold's Projects</h1>
+    </div>
+    <div class="card text-center">
+      <div class="card-body">
+        <h5 class="card-title">About Tim Arnold</h5>
+        <a href="https://eas.uccs.edu/ece/undergraduate-programs/bsce_overview" target="_blank" class="card-subtitle mb-2 text-muted">UCCS Computer Engeneering</a>
+        <p class="card-text">I am a UCCS Student and A Colorado Air National Guardsman. I have lots of experience with: Java, C++ / C, Python and various other languages.</p>
+      </div>
+    </div>
+    <div class="container mt-5">
+      <div class="row gap-3"><% @projects.each do |project| %><%= render project %><% end %><% if @projects.first.nil? %> <p>You do not have any projects yet!</p><% end %> </div>
+    </div>
+  </body>
+</html>
+):
+1:    <!DOCTYPE html>
+2:    <html lang="en">
+3:      <head>
+4:        <title>Bootstrap 5 Website Example</title>
+5:        <meta charset="utf-8">
+6:        <meta name="viewport" content="width=device-width, initial-scale=1">
+7:        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+8:        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+9:        <style>
+10:          body {
+11:            font-family: Consolas, monaco, monospace;
+12:          }
+13:        </style>
+14:      </head>
+15:      <body>
+16:        <ul class="nav nav-tabs">
+17:          <li class="nav-item">
+18:            <a class="nav-link active" aria-current="page" href="http://localhost:3000/projects">Home</a>
+19:          </li>
+20:          </li>
+21:          <% if user_signed_in? %>
+22:          <li class="nav-item">
+23:            <a class="nav-link" href="http://localhost:3000/projects/new">Create New Project</a>
+24:          </li>
+25:          <% end %>
+26:          <li class="nav-item ms-auto">
+27:            <% if user_signed_in? %>
+28:              <a class="btn btn-outline-primary" href=" <%=destroy_user_session_path, method: :delete %> ">Hello, <%= current_user.email %>. Sign out</a>
+29:            <% else %>
+30:              <a class="btn btn-outline-primary" href="http://localhost:3000/users/sign_in">Sign in | Sing Up</a>
+31:            <% end %>
+32:          </li>
+33:        </ul>
+34:        <div class="container-fluid p-3 bg-primary text-white text-left">
+35:          <h1>Arnold's Projects</h1>
+36:        </div>
+37:        <div class="card text-center">
+38:          <div class="card-body">
+39:            <h5 class="card-title">About Tim Arnold</h5>
+40:            <a href="https://eas.uccs.edu/ece/undergraduate-programs/bsce_overview" target="_blank" class="card-subtitle mb-2 text-muted">UCCS Computer Engeneering</a>
+41:            <p class="card-text">I am a UCCS Student and A Colorado Air National Guardsman. I have lots of experience with: Java, C++ / C, Python and various other languages.</p>
+42:          </div>
+43:        </div>
+44:        <div class="container mt-5">
+45:          <div class="row gap-3"><% @projects.each do |project| %><%= render project %><% end %><% if @projects.first.nil? %> <p>You do not have any projects yet!</p><% end %> </div>
+46:        </div>
+47:      </body>
+48:    </html>
+  
+app/views/projects/index.html.erb:28: syntax error, unexpected label, expecting '='
+app/views/projects/index.html.erb:28: syntax error, unexpected label, expecting '='
+app/views/projects/index.html.erb:28: syntax error, unexpected label, expecting '='
+app/views/projects/index.html.erb:28: syntax error, unexpected label, expecting '='
+app/views/projects/index.html.erb:28: syntax error, unexpected label, expecting '='
+app/views/projects/index.html.erb:28: syntax error, unexpected label, expecting '='
+Started GET "/home/index" for 172.17.0.1 at 2022-12-05 17:17:09 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/home/index"):
+  
+Started GET "/home" for 172.17.0.1 at 2022-12-05 17:17:33 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/home"):
+  
+Started GET "/" for 172.17.0.1 at 2022-12-05 17:17:45 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:22
+  Rendered home/index.html.erb within layouts/application (Duration: 11.0ms | Allocations: 1692)
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | Allocations: 3585)
+Completed 200 OK in 18ms (Views: 17.4ms | ActiveRecord: 0.2ms | Allocations: 4668)
+
+
+Started GET "/home/index" for 172.17.0.1 at 2022-12-05 17:18:31 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/home/index"):
+  
+Started GET "/home" for 172.17.0.1 at 2022-12-05 17:19:38 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/home"):
+  
+Started GET "/projects" for 172.17.0.1 at 2022-12-05 17:19:55 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:21
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:45
+  Rendered projects/_project.html.erb (Duration: 1.2ms | Allocations: 272)
+  Rendered projects/_project.html.erb (Duration: 0.2ms | Allocations: 49)
+  Rendered projects/_project.html.erb (Duration: 0.2ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered projects/index.html.erb within layouts/application (Duration: 14.0ms | Allocations: 2905)
+  Rendered layout layouts/application.html.erb (Duration: 17.3ms | Allocations: 4593)
+Completed 200 OK in 20ms (Views: 18.5ms | ActiveRecord: 0.5ms | Allocations: 5597)
+
+
+Started GET "/" for 172.17.0.1 at 2022-12-05 17:20:35 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:22
+  Rendered home/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1126)
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 2605)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.4ms | Allocations: 2911)
+
+
+Started GET "/projects" for 172.17.0.1 at 2022-12-05 17:20:38 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:21
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:45
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 65)
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 49)
+  Rendered projects/_project.html.erb (Duration: 0.2ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.2ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.2ms | Allocations: 48)
+  Rendered projects/index.html.erb within layouts/application (Duration: 9.6ms | Allocations: 1999)
+  Rendered layout layouts/application.html.erb (Duration: 12.8ms | Allocations: 3491)
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.6ms | Allocations: 3811)
+
+
+Started GET "/" for 172.17.0.1 at 2022-12-05 17:20:43 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:22
+  Rendered home/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1112)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 2591)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.1ms | Allocations: 2879)
+
+
+Started DELETE "/users/sign_out" for 172.17.0.1 at 2022-12-05 17:20:45 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 13ms (ActiveRecord: 0.1ms | Allocations: 3246)
+
+
+Started GET "/" for 172.17.0.1 at 2022-12-05 17:20:45 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 303)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 1922)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 2252)
+
+
+Started GET "/projects" for 172.17.0.1 at 2022-12-05 17:20:47 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:45
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 81)
+  Rendered projects/_project.html.erb (Duration: 0.2ms | Allocations: 49)
+  Rendered projects/_project.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.2ms | Allocations: 48)
+  Rendered projects/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1457)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 2949)
+Completed 200 OK in 11ms (Views: 8.7ms | ActiveRecord: 0.1ms | Allocations: 3271)
+
+
+Started GET "/projects/5" for 172.17.0.1 at 2022-12-05 17:20:50 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:63:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1027)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 2488)
+Completed 200 OK in 8ms (Views: 5.2ms | ActiveRecord: 0.2ms | Allocations: 4018)
+
+
+Started GET "/users/sign_in" for 172.17.0.1 at 2022-12-05 17:20:53 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 1.3ms | Allocations: 582)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 7.6ms | Allocations: 2381)
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 4018)
+Completed 200 OK in 17ms (Views: 15.2ms | ActiveRecord: 0.0ms | Allocations: 5452)
+
+
+Started POST "/users/sign_in" for 172.17.0.1 at 2022-12-05 17:21:03 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"tarnoldf@uccs.edu", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "tarnoldf@uccs.edu"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 229ms (ActiveRecord: 0.4ms | Allocations: 2892)
+
+
+Started GET "/" for 172.17.0.1 at 2022-12-05 17:21:03 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:22
+  Rendered home/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1146)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 2627)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.1ms | Allocations: 2916)
+
+
+Started GET "/projects" for 172.17.0.1 at 2022-12-05 17:21:06 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:21
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:45
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 76)
+  Rendered projects/_project.html.erb (Duration: 0.2ms | Allocations: 49)
+  Rendered projects/_project.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.2ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 48)
+  Rendered projects/index.html.erb within layouts/application (Duration: 10.3ms | Allocations: 2034)
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 3526)
+Completed 200 OK in 17ms (Views: 15.4ms | ActiveRecord: 1.0ms | Allocations: 3846)
+
+
+Started GET "/projects/5" for 172.17.0.1 at 2022-12-05 17:21:12 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:63:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/show.html.erb:27
+  Rendered projects/show.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1170)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 2631)
+Completed 200 OK in 12ms (Views: 9.3ms | ActiveRecord: 0.2ms | Allocations: 3393)
+
+
+Started GET "/" for 172.17.0.1 at 2022-12-05 17:21:18 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:22
+  Rendered home/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1120)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 2599)
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.1ms | Allocations: 2887)
+
+
+Started DELETE "/users/sign_out" for 172.17.0.1 at 2022-12-05 17:21:19 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.1ms | Allocations: 1753)
+
+
+Started GET "/" for 172.17.0.1 at 2022-12-05 17:21:19 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 252)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 1752)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms | Allocations: 2040)
+
+
+Started GET "/projects" for 172.17.0.1 at 2022-12-05 17:21:20 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:45
+  Rendered projects/_project.html.erb (Duration: 0.4ms | Allocations: 65)
+  Rendered projects/_project.html.erb (Duration: 0.2ms | Allocations: 49)
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.2ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.2ms | Allocations: 48)
+  Rendered projects/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1386)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 2878)
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.1ms | Allocations: 3196)
+
+
+Started GET "/projects/5" for 172.17.0.1 at 2022-12-05 17:21:22 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:63:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 551)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 2012)
+Completed 200 OK in 8ms (Views: 6.2ms | ActiveRecord: 0.1ms | Allocations: 2764)
+
+
+Started GET "/projects/5" for 172.17.0.1 at 2022-12-05 17:21:48 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:63:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 894)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 2798)
+Completed 200 OK in 17ms (Views: 11.1ms | ActiveRecord: 0.3ms | Allocations: 4408)
+
+
+Started GET "/projects/5" for 172.17.0.1 at 2022-12-05 17:21:49 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:63:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 315)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 1790)
+Completed 200 OK in 9ms (Views: 6.4ms | ActiveRecord: 0.2ms | Allocations: 2612)
+
+
+Started GET "/" for 172.17.0.1 at 2022-12-05 17:21:51 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 597)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 2300)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.0ms | Allocations: 3235)
+
+
+Started GET "/" for 172.17.0.1 at 2022-12-05 17:22:05 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 602)
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 2537)
+Completed 200 OK in 15ms (Views: 15.1ms | ActiveRecord: 0.0ms | Allocations: 3676)
+
+
+Started GET "/projects/5" for 172.17.0.1 at 2022-12-05 17:22:07 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProject Load (0.8ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:63:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 903)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 2585)
+Completed 200 OK in 17ms (Views: 11.5ms | ActiveRecord: 0.8ms | Allocations: 4066)
+
+
+Started GET "/projects" for 172.17.0.1 at 2022-12-05 17:22:08 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:45
+  Rendered projects/_project.html.erb (Duration: 0.9ms | Allocations: 248)
+  Rendered projects/_project.html.erb (Duration: 1.0ms | Allocations: 49)
+  Rendered projects/_project.html.erb (Duration: 1.8ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 48)
+  Rendered projects/index.html.erb within layouts/application (Duration: 12.0ms | Allocations: 2049)
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | Allocations: 3543)
+Completed 200 OK in 19ms (Views: 17.2ms | ActiveRecord: 0.3ms | Allocations: 3997)
+
+
+Started GET "/projects/6" for 172.17.0.1 at 2022-12-05 17:22:11 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:63:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 325)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 1800)
+Completed 200 OK in 8ms (Views: 4.2ms | ActiveRecord: 0.7ms | Allocations: 2574)
+
+
+Started GET "/projects" for 172.17.0.1 at 2022-12-05 17:22:12 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:45
+  Rendered projects/_project.html.erb (Duration: 0.4ms | Allocations: 65)
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 49)
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.2ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.2ms | Allocations: 48)
+  Rendered projects/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1387)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 2879)
+Completed 200 OK in 14ms (Views: 12.0ms | ActiveRecord: 0.2ms | Allocations: 3197)
+
+
+Started GET "/users/sign_in" for 172.17.0.1 at 2022-12-05 17:22:14 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 1.6ms | Allocations: 574)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 12.0ms | Allocations: 2352)
+  Rendered layout layouts/application.html.erb (Duration: 24.2ms | Allocations: 3989)
+Completed 200 OK in 30ms (Views: 28.8ms | ActiveRecord: 0.0ms | Allocations: 5374)
+
+
+Started POST "/users/sign_in" for 172.17.0.1 at 2022-12-05 17:22:22 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"tarnoldf@uccs.edu", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (5.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "tarnoldf@uccs.edu"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 242ms (ActiveRecord: 5.1ms | Allocations: 2808)
+
+
+Started GET "/" for 172.17.0.1 at 2022-12-05 17:22:22 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:22
+  Rendered home/index.html.erb within layouts/application (Duration: 9.3ms | Allocations: 1175)
+  Rendered layout layouts/application.html.erb (Duration: 19.6ms | Allocations: 2656)
+Completed 200 OK in 24ms (Views: 20.1ms | ActiveRecord: 0.1ms | Allocations: 2946)
+
+
+Started GET "/projects" for 172.17.0.1 at 2022-12-05 17:22:28 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:21
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:45
+  Rendered projects/_project.html.erb (Duration: 2.2ms | Allocations: 76)
+  Rendered projects/_project.html.erb (Duration: 1.4ms | Allocations: 49)
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.5ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 3.1ms | Allocations: 48)
+  Rendered projects/index.html.erb within layouts/application (Duration: 19.1ms | Allocations: 2019)
+  Rendered layout layouts/application.html.erb (Duration: 27.9ms | Allocations: 3511)
+Completed 200 OK in 33ms (Views: 32.5ms | ActiveRecord: 0.3ms | Allocations: 3831)
+
+
+Started GET "/projects/5" for 172.17.0.1 at 2022-12-05 17:22:37 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:63:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/show.html.erb:27
+  Rendered projects/show.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1192)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 2653)
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.2ms | Allocations: 3415)
+
+
+Started GET "/" for 172.17.0.1 at 2022-12-05 17:22:47 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:22
+  Rendered home/index.html.erb within layouts/application (Duration: 7.7ms | Allocations: 1126)
+  Rendered layout layouts/application.html.erb (Duration: 74.3ms | Allocations: 2612)
+Completed 200 OK in 80ms (Views: 79.1ms | ActiveRecord: 0.1ms | Allocations: 2901)
+
+
+Started GET "/projects" for 172.17.0.1 at 2022-12-05 17:23:39 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:21
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:45
+  Rendered projects/_project.html.erb (Duration: 2.0ms | Allocations: 272)
+  Rendered projects/_project.html.erb (Duration: 0.4ms | Allocations: 49)
+  Rendered projects/_project.html.erb (Duration: 0.6ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 1.5ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.4ms | Allocations: 48)
+  Rendered projects/index.html.erb within layouts/application (Duration: 16.4ms | Allocations: 2893)
+  Rendered layout layouts/application.html.erb (Duration: 23.3ms | Allocations: 4805)
+Completed 200 OK in 30ms (Views: 28.5ms | ActiveRecord: 0.3ms | Allocations: 5993)
+
+
+Started GET "/projects/new" for 172.17.0.1 at 2022-12-05 17:23:42 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/_form.html.erb (Duration: 11.8ms | Allocations: 9426)
+  Rendered projects/new.html.erb within layouts/application (Duration: 13.9ms | Allocations: 9747)
+  Rendered layout layouts/application.html.erb (Duration: 16.3ms | Allocations: 11341)
+Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 0.0ms | Allocations: 11775)
+
+
+Started GET "/projects/new" for 172.17.0.1 at 2022-12-05 17:23:44 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/_form.html.erb (Duration: 1.9ms | Allocations: 1049)
+  Rendered projects/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1109)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 2589)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms | Allocations: 2954)
+
+
+Started GET "/" for 172.17.0.1 at 2022-12-05 17:23:53 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:22
+  Rendered home/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1693)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 3343)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.1ms | Allocations: 4269)
+
+
+Started DELETE "/users/sign_out" for 172.17.0.1 at 2022-12-05 17:23:55 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.1ms | Allocations: 1810)
+
+
+Started GET "/" for 172.17.0.1 at 2022-12-05 17:23:55 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 254)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 1757)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 2059)
+
+
+Started GET "/users/sign_in" for 172.17.0.1 at 2022-12-05 17:24:03 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 1.0ms | Allocations: 574)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 4.5ms | Allocations: 2353)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 3990)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms | Allocations: 5366)
+
+
+Started GET "/users/sign_up" for 172.17.0.1 at 2022-12-05 17:24:06 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered users/shared/_error_messages.html.erb (Duration: 0.6ms | Allocations: 225)
+  Rendered users/shared/_links.html.erb (Duration: 0.3ms | Allocations: 242)
+  Rendered users/registrations/new.html.erb within layouts/application (Duration: 4.3ms | Allocations: 2306)
+  Rendered layout layouts/application.html.erb (Duration: 12.9ms | Allocations: 3954)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.0ms | Allocations: 5449)
+
+
+Started POST "/users/sign_in" for 172.17.0.1 at 2022-12-05 17:24:10 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 482)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 0.2ms | Allocations: 138)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1254)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 2716)
+Completed 200 OK in 9ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 3283)
+
+
+Started POST "/users/sign_in" for 172.17.0.1 at 2022-12-05 17:24:18 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"tarnoldf@uccs.edu", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "tarnoldf@uccs.edu"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 231ms (ActiveRecord: 0.1ms | Allocations: 2699)
+
+
+Started GET "/" for 172.17.0.1 at 2022-12-05 17:24:18 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:22
+  Rendered home/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1135)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 2627)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.1ms | Allocations: 2916)
+
+
+Started GET "/projects" for 172.17.0.1 at 2022-12-05 17:24:26 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:21
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:45
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 76)
+  Rendered projects/_project.html.erb (Duration: 0.2ms | Allocations: 49)
+  Rendered projects/_project.html.erb (Duration: 0.2ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.2ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 48)
+  Rendered projects/index.html.erb within layouts/application (Duration: 6.4ms | Allocations: 2025)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 3517)
+Completed 200 OK in 13ms (Views: 12.6ms | ActiveRecord: 0.2ms | Allocations: 3837)
+
+
+Started GET "/projects/8" for 172.17.0.1 at 2022-12-05 17:24:31 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:63:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/show.html.erb:27
+  Rendered projects/show.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1648)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 3109)
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.2ms | Allocations: 3948)
+
+
+Started GET "/projects/8/edit" for 172.17.0.1 at 2022-12-05 17:24:33 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:63:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/edit.html.erb within layouts/application
+  Rendered projects/_form.html.erb (Duration: 2.1ms | Allocations: 1124)
+  Rendered projects/edit.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1529)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 3000)
+Completed 200 OK in 11ms (Views: 8.7ms | ActiveRecord: 0.1ms | Allocations: 3806)
+
+
+Started GET "/" for 172.17.0.1 at 2022-12-05 17:24:35 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:22
+  Rendered home/index.html.erb within layouts/application (Duration: 6.8ms | Allocations: 1110)
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 2589)
+Completed 200 OK in 15ms (Views: 14.6ms | ActiveRecord: 0.2ms | Allocations: 2877)
+
+
+Started GET "/projects/8/edit" for 172.17.0.1 at 2022-12-05 17:24:49 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:63:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/edit.html.erb within layouts/application
+  Rendered projects/_form.html.erb (Duration: 2.9ms | Allocations: 1658)
+  Rendered projects/edit.html.erb within layouts/application (Duration: 4.5ms | Allocations: 2173)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 4043)
+Completed 200 OK in 16ms (Views: 10.7ms | ActiveRecord: 0.4ms | Allocations: 5628)
+
+
+Started GET "/projects/8/edit" for 172.17.0.1 at 2022-12-05 17:24:49 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:63:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/edit.html.erb within layouts/application
+  Rendered projects/_form.html.erb (Duration: 3.3ms | Allocations: 1090)
+  Rendered projects/edit.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1214)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 2685)
+Completed 200 OK in 14ms (Views: 10.5ms | ActiveRecord: 0.2ms | Allocations: 3509)
+
+
+Started GET "/projects" for 172.17.0.1 at 2022-12-05 17:24:54 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:21
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:45
+  Rendered projects/_project.html.erb (Duration: 1.3ms | Allocations: 209)
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 49)
+  Rendered projects/_project.html.erb (Duration: 0.2ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.2ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 48)
+  Rendered projects/index.html.erb within layouts/application (Duration: 14.3ms | Allocations: 2660)
+  Rendered layout layouts/application.html.erb (Duration: 21.5ms | Allocations: 4152)
+Completed 200 OK in 24ms (Views: 22.3ms | ActiveRecord: 0.4ms | Allocations: 4571)
+
+
+Started GET "/" for 172.17.0.1 at 2022-12-05 17:25:00 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:22
+  Rendered home/index.html.erb within layouts/application (Duration: 6.8ms | Allocations: 1691)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 3341)
+Completed 200 OK in 18ms (Views: 17.4ms | ActiveRecord: 0.1ms | Allocations: 4267)
+
+
+Started GET "/home/index" for 172.17.0.1 at 2022-12-05 17:25:29 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/home/index"):
+  
+Started GET "/projects/5" for 172.17.0.1 at 2022-12-05 17:27:17 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:63:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/show.html.erb:27
+  Rendered projects/show.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1643)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 3104)
+Completed 200 OK in 10ms (Views: 6.0ms | ActiveRecord: 0.2ms | Allocations: 3961)
+
+
+Started GET "/projects" for 172.17.0.1 at 2022-12-05 17:27:34 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:21
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:45
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 65)
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 49)
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.2ms | Allocations: 48)
+  Rendered projects/index.html.erb within layouts/application (Duration: 9.0ms | Allocations: 2015)
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 3507)
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.3ms | Allocations: 3826)
+
+
+Started GET "/" for 172.17.0.1 at 2022-12-05 17:27:37 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:22
+  Rendered home/index.html.erb within layouts/application (Duration: 8.5ms | Allocations: 1124)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 2603)
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.3ms | Allocations: 2893)
+
+
+Started DELETE "/users/sign_out" for 172.17.0.1 at 2022-12-05 17:27:38 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.5ms | Allocations: 1808)
+
+
+Started GET "/" for 172.17.0.1 at 2022-12-05 17:27:38 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 256)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 1759)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 2047)
+
+
+Started GET "/projects" for 172.17.0.1 at 2022-12-05 17:27:40 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:45
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 65)
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 49)
+  Rendered projects/_project.html.erb (Duration: 0.2ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.2ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.2ms | Allocations: 48)
+  Rendered projects/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1382)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 2874)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.1ms | Allocations: 3192)
+
+
+Started GET "/projects/9" for 172.17.0.1 at 2022-12-05 17:27:52 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:63:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 314)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 1789)
+Completed 200 OK in 9ms (Views: 4.5ms | ActiveRecord: 0.3ms | Allocations: 2541)
+
+
+Started GET "/projects" for 172.17.0.1 at 2022-12-05 17:28:00 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:45
+  Rendered projects/_project.html.erb (Duration: 0.8ms | Allocations: 65)
+  Rendered projects/_project.html.erb (Duration: 1.1ms | Allocations: 49)
+  Rendered projects/_project.html.erb (Duration: 0.2ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered projects/index.html.erb within layouts/application (Duration: 8.6ms | Allocations: 1383)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 2875)
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.1ms | Allocations: 3193)
+
+
+Started GET "/projects/6" for 172.17.0.1 at 2022-12-05 17:28:02 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:63:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 325)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 1800)
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.1ms | Allocations: 2552)
+
+
+Started GET "/projects" for 172.17.0.1 at 2022-12-05 17:28:04 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:45
+  Rendered projects/_project.html.erb (Duration: 0.5ms | Allocations: 65)
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 49)
+  Rendered projects/_project.html.erb (Duration: 0.2ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.4ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.4ms | Allocations: 48)
+  Rendered projects/index.html.erb within layouts/application (Duration: 10.1ms | Allocations: 1375)
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 2867)
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.2ms | Allocations: 3185)
+
+
+Started GET "/projects/5" for 172.17.0.1 at 2022-12-05 17:28:06 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:63:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 327)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 1802)
+Completed 200 OK in 6ms (Views: 3.9ms | ActiveRecord: 0.1ms | Allocations: 2554)
+
+
+Started GET "/projects" for 172.17.0.1 at 2022-12-05 17:28:08 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:45
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 65)
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 49)
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.4ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.7ms | Allocations: 48)
+  Rendered projects/index.html.erb within layouts/application (Duration: 13.5ms | Allocations: 1381)
+  Rendered layout layouts/application.html.erb (Duration: 18.8ms | Allocations: 2873)
+Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 0.6ms | Allocations: 3191)
+
+
+Started GET "/users/sign_in" for 172.17.0.1 at 2022-12-05 17:28:10 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 1.2ms | Allocations: 574)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2353)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 3992)
+Completed 200 OK in 16ms (Views: 13.5ms | ActiveRecord: 0.0ms | Allocations: 5374)
+
+
+Started POST "/users/sign_in" for 172.17.0.1 at 2022-12-05 17:28:17 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"tarnoldf@uccs.edu", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "tarnoldf@uccs.edu"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 238ms (ActiveRecord: 0.1ms | Allocations: 2796)
+
+
+Started GET "/" for 172.17.0.1 at 2022-12-05 17:28:17 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:22
+  Rendered home/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1140)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 2629)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.1ms | Allocations: 2918)
+
+
+Started GET "/projects" for 172.17.0.1 at 2022-12-05 17:28:20 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:21
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:45
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 76)
+  Rendered projects/_project.html.erb (Duration: 0.2ms | Allocations: 49)
+  Rendered projects/_project.html.erb (Duration: 0.2ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 1.1ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 48)
+  Rendered projects/index.html.erb within layouts/application (Duration: 10.4ms | Allocations: 2021)
+  Rendered layout layouts/application.html.erb (Duration: 12.8ms | Allocations: 3513)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.2ms | Allocations: 3833)
+
+
+Started GET "/projects/5" for 172.17.0.1 at 2022-12-05 17:28:27 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:63:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/show.html.erb:27
+  Rendered projects/show.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1173)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 2634)
+Completed 200 OK in 8ms (Views: 5.9ms | ActiveRecord: 0.2ms | Allocations: 3396)
+
+
+Started DELETE "/projects/5" for 172.17.0.1 at 2022-12-05 17:28:32 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"5"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:63:in `set_project'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/projects_controller.rb:52:in `destroy'
+  [1m[36mProject Destroy (3.6ms)[0m  [1m[31mDELETE FROM "projects" WHERE "projects"."id" = ?[0m  [["id", 5]]
+  ↳ app/controllers/projects_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (4.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/projects_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/projects
+Completed 302 Found in 16ms (ActiveRecord: 8.4ms | Allocations: 2435)
+
+
+Started GET "/projects" for 172.17.0.1 at 2022-12-05 17:28:32 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:21
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:45
+  Rendered projects/_project.html.erb (Duration: 6.8ms | Allocations: 65)
+  Rendered projects/_project.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.6ms | Allocations: 48)
+  Rendered projects/_project.html.erb (Duration: 0.3ms | Allocations: 48)
+  Rendered projects/index.html.erb within layouts/application (Duration: 13.0ms | Allocations: 1900)
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 3405)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.3ms | Allocations: 3724)
+
+
+Started GET "/projects/new" for 172.17.0.1 at 2022-12-05 17:28:36 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/_form.html.erb (Duration: 1.9ms | Allocations: 1022)
+  Rendered projects/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1276)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 2755)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 3132)
+
+
+Started POST "/projects" for 172.17.0.1 at 2022-12-05 17:28:45 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "project"=>{"title"=>"ausasn", "description"=>"aubxabc"}, "commit"=>"Create Project"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/projects_controller.rb:27:in `block in create'
+  [1m[36mProject Create (1.0ms)[0m  [1m[32mINSERT INTO "projects" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "ausasn"], ["description", "aubxabc"], ["created_at", "2022-12-05 17:28:45.571986"], ["updated_at", "2022-12-05 17:28:45.571986"]]
+  ↳ app/controllers/projects_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (5.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/projects_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/projects/10
+Completed 302 Found in 13ms (ActiveRecord: 6.2ms | Allocations: 3058)
+
+
+Started GET "/projects/10" for 172.17.0.1 at 2022-12-05 17:28:45 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:63:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/show.html.erb:27
+  Rendered projects/show.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1198)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 2663)
+Completed 200 OK in 9ms (Views: 7.2ms | ActiveRecord: 0.3ms | Allocations: 3416)
+
+

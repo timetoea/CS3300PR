@@ -27,7 +27,7 @@
         <% if user_signed_in? %>
           <a class="btn btn-outline-primary" href="http://localhost:3000">Hello, <%= current_user.email %>. Sign out</a>
         <% else %>
-          <a class="btn btn-outline-primary" href="http://localhost:3000">Sign in | Sing Up</a>
+          <a class="btn btn-outline-primary" href="http://localhost:3000/users/sign_in">Sign in | Sing Up</a>
         <% end %>
       </li>
     </ul>

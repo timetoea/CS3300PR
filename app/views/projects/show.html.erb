@@ -21,15 +21,24 @@
 
 <ul class="nav nav-tabs">
   <li class="nav-item">
-    <a class="nav-link" aria-current="page" href="http://localhost:3000/">Home</a>
+  <a class="nav-link active" aria-current="page" href="http://localhost:3000/projects">Home</a>
   </li>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="http://localhost:3000/projects/new">Create New Project</a>
-  </li>
+  <% if user_signed_in? %>
+      <li class="nav-item">
+        <a class="nav-link" href="http://localhost:3000/projects/new">Create New Project</a>
+      </li>
+      <% end %>
   <li class="nav-item">
     <a class="nav-link active" href=""><%=@project.title %></a>
   </li>
+  <li class="nav-item ms-auto">
+        <% if user_signed_in? %>
+          <a class="btn btn-outline-primary" href="http://localhost:3000">Hello, <%= current_user.email %>. Sign out</a>
+        <% else %>
+          <a class="btn btn-outline-primary" href="http://localhost:3000/users/sign_in">Sign in | Sing Up</a>
+        <% end %>
+      </li>
 </ul>
 
 <div class="container-fluid p-3 bg-primary text-white text-left">
@@ -42,10 +51,14 @@
   <div class="card-body">
     <h5 class="card-title"><%=@project.title %> Discription:</h5>
     <p class="card-text"><%=@project.description %> </p>
+    <% if user_signed_in? %>
     <a href="<%= edit_project_path(@project)%>" class="card-link">Edit This Project</a>
-    <a href="http://localhost:3000/" class="card-link">See All Projects</a>
+    <% end %>
+    <a href="http://localhost:3000/projects" class="card-link">See All Projects</a>
   </div>
 </div>
+<% if user_signed_in? %>
 <div>
   <%= button_to "Destroy this project", @project, method: :delete %>
 </div>
+<% end %>
